@@ -3,53 +3,20 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Set up layout to remove menu bar ect.
+;;; Set global configs first
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Remove menu bar, tool bar, and scroll bar
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(load "~/.emacs.d/global-configs/appearance-cfg.el")
+(load "~/.emacs.d/global-configs/style-cfg.el")
+(load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Color theme settings
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Set color theme on start
-(load-theme 'wombat)
-
-
+;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Document viewer settings (i.e. for PDF reading)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Set doc-view resolution for viewing pdf files
-(set 'doc-view-resolution '(200))
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Set up auto indentation
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Set tab width to 2 because 4 is unnecessary
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
-(setq indent-line-function 'insert-tab)
-
-;; Auto indent yanked tex   t. Handles any  unwanted whitespace when pasting code blocks
-(dolist (command '(yank yank-pop))
-  (eval `(defadvice ,command (after indent-region activate)
-    (and (not current-prefix-arg)
-      (member major-mode '(emacs-lisp-mode lisp-mode
-        clojure-mode    scheme-mode
-        haskell-mode    ruby-mode
-        rspec-mode      python-mode
-        c-mode          c++-mode
-        objc-mode       java-mode
-        latex-mode      plain-tex-mode))
-      (let ((mark-even-if-inactive transient-mark-mode))
-        (indent-region (region-beginning) (region-end) nil))))))
+;(set 'doc-view-resolution '(200))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
