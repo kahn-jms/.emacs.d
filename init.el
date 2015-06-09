@@ -11,6 +11,7 @@
 (load "~/.emacs.d/global-configs/style-cfg.el")
 (load "~/.emacs.d/global-configs/commands-cfg.el")
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
 
 ;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -32,10 +33,11 @@
   ;; Specify package repos here
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                            ("marmalade" . "https://marmalade-repo.org/packages/")
-                           ("melpa" . "http://melpa.org/packages/")))
+                           ("melpa" . "http://melpa.org/packages/") ))
+                           ;;("melpa2" . "http://melpa.milkbox.net/packages/")))
 
   ;; Specify packages we want here
-  (setq package-list '(undo-tree))
+  (setq package-list '(undo-tree rust-mode toml-mode))
   
   ;; Activate all the packages
   (package-initialize)
