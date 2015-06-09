@@ -7,8 +7,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (load "~/.emacs.d/global-configs/appearance-cfg.el")
-(load "~/.emacs.d/global-configs/style-cfg.el")
 (load "~/.emacs.d/global-configs/google-c-style.el")
+(load "~/.emacs.d/global-configs/style-cfg.el")
+(load "~/.emacs.d/global-configs/commands-cfg.el")
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 
 ;; Need to sort out why PDFs look bad ;;

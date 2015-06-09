@@ -31,7 +31,7 @@
 ;;; Line numbering
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(linum-mode 1)
+(global-linum-mode 1)
 (line-number-mode 1)
 ;(setq linum-format "%4d\u2502")
 ;(setq linum-format "%3d\u2551")
