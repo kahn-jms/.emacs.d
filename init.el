@@ -12,6 +12,7 @@
 (load "~/.emacs.d/global-configs/commands-cfg.el")
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
 
 ;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -37,7 +38,10 @@
                            ;;("melpa2" . "http://melpa.milkbox.net/packages/")))
 
   ;; Specify packages we want here
-  (setq package-list '(undo-tree rust-mode toml-mode))
+  (setq package-list '(undo-tree
+                       rust-mode
+                       toml-mode
+                       smart-tabs-mode))
   
   ;; Activate all the packages
   (package-initialize)
@@ -53,5 +57,6 @@
 
   ;; Load individual package configs (thank you Josh for the idea of this)
   (load "~/.emacs.d/package-configs/undo-tree-cfg.el")
+  (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
   
 )
