@@ -13,6 +13,7 @@
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/latex-mode-cfg.el")
 
 ;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -41,7 +42,10 @@
   (setq package-list '(undo-tree
                        rust-mode
                        toml-mode
-                       smart-tabs-mode))
+                       smart-tabs-mode
+                       auctex
+                       auctex-latexmk
+                       latex-preview-pane))
   
   ;; Activate all the packages
   (package-initialize)
@@ -58,5 +62,7 @@
   ;; Load individual package configs (thank you Josh for the idea of this)
   (load "~/.emacs.d/package-configs/undo-tree-cfg.el")
   (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
+  (load "~/.emacs.d/package-configs/auctex-latexmk-cfg.el")
+  (load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
   
 )
