@@ -9,6 +9,6 @@
             (setq latex-preview-pane-multifile-mode 'auctex)
 
             ;; Tell it which compiler to use
-            (setq pdf-latex-command "LatexMk")
+            (setq pdf-latex-command "latexmk")
             )
           )
