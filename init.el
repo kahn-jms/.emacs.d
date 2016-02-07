@@ -64,5 +64,7 @@
   (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
   (load "~/.emacs.d/package-configs/auctex-latexmk-cfg.el")
   (load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
+  ;; Also load package configs for non-repo packages
+  (load "~/.emacs.d/package-configs/predictive-cfg.el")
   
 )
