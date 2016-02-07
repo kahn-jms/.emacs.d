@@ -10,6 +10,7 @@
 (load "~/.emacs.d/global-configs/google-c-style.el")
 (load "~/.emacs.d/global-configs/style-cfg.el")
 (load "~/.emacs.d/global-configs/commands-cfg.el")
+(load "~/.emacs.d/global-configs/session-cfg.el")
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
