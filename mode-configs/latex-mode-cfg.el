@@ -12,5 +12,8 @@
             
             ;; Set default compiler
             (setq TeX-command-default "latexmk")
+
+            ;; Turn on predictive mode by default in LaTeX mode
+            (predictive-mode 1)
             )
           )
