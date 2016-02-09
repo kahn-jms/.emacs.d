@@ -16,7 +16,7 @@
 (setq predictive-auto-learn t
       predictive-add-to-dict-ask nil ; Do no ask to add to dictionary when exiting emacs
       predictive-use-auto-learn-cache t ; Learnt words are cached, only added to dict when emacs idle for flush-auto-learn-delay seconds
-      predictive-flush-auto-learn-delay 10
+      predictive-flush-auto-learn-delay 30
       predictive-which-dict t)
-;      predictive-use-buffer-local-dict t)
+      ;predictive-use-buffer-local-dict t)
       ;predictive-main-dict 'rpg-dictionary)
