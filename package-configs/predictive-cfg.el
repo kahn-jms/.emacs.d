@@ -20,3 +20,8 @@
       predictive-which-dict t)
       ;predictive-use-buffer-local-dict t)
       ;predictive-main-dict 'rpg-dictionary)
+;; Turn off some annoying features that also slow down emacs a lot
+(setq completion-auto-show nil
+      completion-overwrite nil
+      completion-ui-use-dynamic nil)
+  

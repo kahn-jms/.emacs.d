@@ -64,8 +64,10 @@
   (load "~/.emacs.d/package-configs/undo-tree-cfg.el")
   (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
   (load "~/.emacs.d/package-configs/auctex-latexmk-cfg.el")
-  (load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
+  ;(load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
   ;; Also load package configs for non-repo packages
-  (load "~/.emacs.d/package-configs/predictive-cfg.el")
+  ;(load "~/.emacs.d/package-configs/predictive-cfg.el")
+  ; Not sure if ordering matters but load reftex configs after auctex
+  (load "~/.emacs.d/package-configs/reftex-cfg.el")
   
 )
