@@ -15,6 +15,7 @@
 (load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/latex-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/python-mode-cfg.el")
 
 ;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -46,7 +47,8 @@
                        smart-tabs-mode
                        auctex
                        auctex-latexmk
-                       latex-preview-pane))
+                       latex-preview-pane
+                       google-c-style))
   
   ;; Activate all the packages
   (package-initialize)
