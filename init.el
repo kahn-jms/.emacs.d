@@ -37,7 +37,8 @@
   ;; Specify package repos here
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                            ("marmalade" . "https://marmalade-repo.org/packages/")
-                           ("melpa" . "http://melpa.org/packages/") ))
+                           ;; ("melpa" . "https://melpa.org/packages/") ))
+                           ("melpa" . "https://stable.melpa.org/packages/") ))
                            ;;("melpa2" . "http://melpa.milkbox.net/packages/")))
 
   ;; Specify packages we want here
@@ -46,7 +47,7 @@
                        toml-mode
                        smart-tabs-mode
                        auctex
-                       auctex-latexmk
+                       ;auctex-latexmk
                        latex-preview-pane
                        google-c-style))
   
