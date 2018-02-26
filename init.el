@@ -39,8 +39,9 @@
   ;; Specify package repos here
   (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                            ("marmalade" . "https://marmalade-repo.org/packages/")
-                           ("melpa" . "http://melpa.org/packages/") ))
-                           ;;("melpa2" . "http://melpa.milkbox.net/packages/")))
+                           ("melpa" . "https://melpa.org/packages/") ;))
+                           ("melpa" . "https://stable.melpa.org/packages/") ;))
+                           ("melpa2" . "http://melpa.milkbox.net/packages/")))
 
   ;; Specify packages we want here
   (setq package-list '(undo-tree
