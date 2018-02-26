@@ -8,5 +8,9 @@
 
 ;; Plug into AUCTeX
 (setq reftex-plug-into-auctex t)
-              
+
+;; So that RefTeX also recognizes \addbibresource. Note that you
+;; can't use $HOME in path for \addbibresource but that "~"
+;; works.
+(setq reftex-bibliography-commands '("bibliography" "nobibliography" "addbibresource"))              
         

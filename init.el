@@ -16,6 +16,8 @@
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/latex-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/python-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/org-mode-cfg.el")
+
 
 ;; Need to sort out why PDFs look bad ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
