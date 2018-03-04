@@ -88,4 +88,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-column ((t (:background "gray15" :strike-through nil :underline nil :slant normal :weight normal :height 128 :family "Ubuntu Mono")))))
+ '(org-column ((t (:background "gray15" :strike-through nil :underline nil :slant normal :weight normal :height 128 :family "Ubuntu Mono"))))
+ '(org-scheduled ((t (:foreground "green"))))
+ '(org-scheduled-today ((t (:foreground "green")))))

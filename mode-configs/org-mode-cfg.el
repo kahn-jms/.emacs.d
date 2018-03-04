@@ -22,6 +22,9 @@
             ;; Replace the default pdf viewer
             (add-to-list 'org-file-apps '("\\.pdf" . "evince %s"))
 
+            ;; Allow Beamer to split long lists over multiple slides
+            (setq org-beamer-frame-default-options "[allowframebreaks,label=]")
+
             ;; Easy access to agenda
             (local-set-key (kbd "C-c a") 'org-agenda)
 
@@ -42,6 +45,7 @@
                       (tags-todo "ANALYSIS")
                       (tags-todo "SOFTWARE")
                       (tags-todo "TASKS")
+                      (tags-todo "MEETINGS")
                       ))
                     ;; Agenda for the day
                     ("d" "Daily Action List"
