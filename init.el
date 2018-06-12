@@ -14,6 +14,7 @@
 (load "~/.emacs.d/mode-configs/cc-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/rust-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/flyspell-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/latex-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/python-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/org-mode-cfg.el")
@@ -91,3 +92,6 @@
  '(org-column ((t (:background "gray15" :strike-through nil :underline nil :slant normal :weight normal :height 128 :family "Ubuntu Mono"))))
  '(org-scheduled ((t (:foreground "green"))))
  '(org-scheduled-today ((t (:foreground "green")))))
+
+;; won't work in flyspell-mode-config, dunno why
+(setq ispell-dictionary "british") 

@@ -21,6 +21,10 @@
             ;; (setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) %o")))
 
             ;; Turn on predictive mode by default in LaTeX mode
-            ;(predictive-mode 1)
+            ;; (predictive-mode 1)
+
+            ;; Enable synctex when compiling
+            (setq TeX-source-correlate-mode t)
+
             )
           )
