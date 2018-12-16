@@ -1,2 +1,1 @@
-;; org-persist.el - pcrummel at <2018-06-12 Di 17:58>
-(setq stored-clock-history '(("/home/james/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org" . 37805) ("/home/james/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org" . 17910) ("/home/james/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org" . 1581) ("/home/james/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org" . 11049) ("/home/james/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org" . 11465)))
+;; org-persist.el - pcrummel at <2018-11-23 Fr 16:14>
