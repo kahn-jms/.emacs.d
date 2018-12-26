@@ -17,7 +17,7 @@
             (flyspell-mode 1)
 
             ;; Set default viewer
-            ;; (setq TeX-view-program-selection "")
+            ;; (setq TeX-view-program-selection '((output-pdf "Okular")))
             ;; (setq TeX-view-program-list '(("Okular" "okular --page=%(outpage) %o")))
             ;; (setq TeX-view-program-list '(("Evince" "evince --page-index=%(outpage) %o")))
 
