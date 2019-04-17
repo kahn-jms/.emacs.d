@@ -7,3 +7,5 @@ eshell
 history
 cust_packages
 desktop
+session.*
+.org-id-locations

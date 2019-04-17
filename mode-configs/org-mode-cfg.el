@@ -52,9 +52,9 @@
             (setq org-agenda-custom-commands
                   '(("h" "Time specific first TODO Lists"
                      ((agenda)
-                      (tags-todo "ANALYSIS")
+                      (tags-todo "DEFENSE")
                       (tags-todo "SOFTWARE")
-                      (tags-todo "TASKS")
+                      (tags-todo "ADD_TASKS")
                       (tags-todo "MEETINGS")
                       ))
                     ;; Agenda for the day

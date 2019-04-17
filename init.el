@@ -16,6 +16,8 @@
 (load "~/.emacs.d/mode-configs/toml-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/flyspell-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/latex-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/markdown-mode-cfg.el")
+(load "~/.emacs.d/mode-configs/bibtex-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/python-mode-cfg.el")
 (load "~/.emacs.d/mode-configs/org-mode-cfg.el")
 
@@ -42,7 +44,7 @@
                            ("marmalade" . "https://marmalade-repo.org/packages/")
                            ("melpa" . "https://melpa.org/packages/") ;))
                            ("melpa" . "https://stable.melpa.org/packages/") ;))
-                           ("melpa2" . "http://melpa.milkbox.net/packages/")))
+                           ("melpa2" . "http://melpa.org/packages/")))
 
   ;; Specify packages we want here
   (setq package-list '(undo-tree
@@ -53,7 +55,10 @@
                        auctex-latexmk
                        latex-preview-pane
                        google-c-style
-                       markdown-mode))
+											 ;gruvbox-theme
+                       markdown-mode
+                       pandoc-mode
+                       ))
   
   ;; Activate all the packages
   (package-initialize)
@@ -71,6 +76,7 @@
   (load "~/.emacs.d/package-configs/undo-tree-cfg.el")
   (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
   (load "~/.emacs.d/package-configs/auctex-latexmk-cfg.el")
+  ;; (load "~/.emacs.d/package-configs/markdown-mode-cfg.el")
   ;(load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
   ;; Also load package configs for non-repo packages
   ;(load "~/.emacs.d/package-configs/predictive-cfg.el")
@@ -78,6 +84,11 @@
   (load "~/.emacs.d/package-configs/reftex-cfg.el")
   
 )
+
+;; Set color theme on start
+;; Custom themes that require install should be loaded after package installs
+;(load-theme 'gruvbox)
+
 ;; Fix color scheme (can't read on dark bg)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -86,7 +97,10 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
    (quote
-    ("~/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org"))))
+    ("~/Documents/lrz-sync/PhD-writings/OrgMode/gtd.org")))
+ '(package-selected-packages
+   (quote
+    (dash pandoc-mode undo-tree toml-mode smart-tabs-mode rust-mode markdown-mode latex-preview-pane google-c-style auctex-latexmk))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -98,3 +112,6 @@
 
 ;; won't work in flyspell-mode-config, dunno why
 (setq ispell-dictionary "british") 
+
+;; Set CTRL-z to not background emacs
+(global-unset-key (kbd "C-z"))
