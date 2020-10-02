@@ -44,7 +44,8 @@
                            ("marmalade" . "https://marmalade-repo.org/packages/")
                            ("melpa" . "https://melpa.org/packages/") ;))
                            ("melpa" . "https://stable.melpa.org/packages/") ;))
-                           ("melpa2" . "http://melpa.org/packages/")))
+                           ("melpa2" . "http://melpa.org/packages/")
+													 ))
 
   ;; Specify packages we want here
   (setq package-list '(undo-tree
@@ -59,6 +60,11 @@
                        markdown-mode
                        pandoc-mode
                        ))
+
+	;; Load custom packages
+	;(add-to-list 'load-path "/home/jkahn/.emacs.d/extras/twauctex/")
+	;(require 'twauctex)
+	;(twauctex-global-mode)
   
   ;; Activate all the packages
   (package-initialize)
@@ -76,6 +82,7 @@
   (load "~/.emacs.d/package-configs/undo-tree-cfg.el")
   (load "~/.emacs.d/package-configs/smart-tab-mode-cfg.el")
   (load "~/.emacs.d/package-configs/auctex-latexmk-cfg.el")
+  ;(load "~/.emacs.d/package-configs/twauctex-latexmk-cfg.el")
   ;; (load "~/.emacs.d/package-configs/markdown-mode-cfg.el")
   ;(load "~/.emacs.d/package-configs/latex-preview-pane-cfg.el")
   ;; Also load package configs for non-repo packages
@@ -115,3 +122,4 @@
 
 ;; Set CTRL-z to not background emacs
 (global-unset-key (kbd "C-z"))
+(put 'upcase-region 'disabled nil)

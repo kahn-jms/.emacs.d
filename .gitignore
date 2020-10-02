@@ -9,3 +9,5 @@ cust_packages
 desktop
 session.*
 .org-id-locations
+*.data
+extras/

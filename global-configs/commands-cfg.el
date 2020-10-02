@@ -5,9 +5,9 @@
 (savehist-mode 1)
 
 ;; Add texlive bin to env variable PATH
-(setenv "PATH" (concat (getenv "HOME")"/.local/texlive/2018/bin/x86_64-linux:" (getenv "PATH")))
+(setenv "PATH" (concat (getenv "HOME")"/.local/texlive/2019/bin/x86_64-linux:" (getenv "PATH")))
 ;; And add it to exec-path variable
-(setq exec-path (append exec-path '("~/.local/texlive/2018/bin/x86_64-linux")))
+(setq exec-path (append exec-path '("~/.local/texlive/2019/bin/x86_64-linux")))
 
 ;; easy spell check (for when flyspell minor mode enabled)
 ;; Can't use commands with C-M-f8 since this switches ttly's
