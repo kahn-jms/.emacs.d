@@ -16,6 +16,9 @@
             ;; Set spell check mode on
             (flyspell-mode 1)
 
+						;; Set tab0width to 4 (Overleaf standard)
+						(setq-default tab-width 4)
+
             ;; Set default viewer
 						(setq TeX-view-program-selection '((output-pdf "Okular")))
 						;; (setq TeX-view-program-list '(("Okular" "okular --page=%(outpage) %o")))
